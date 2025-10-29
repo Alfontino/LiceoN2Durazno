@@ -10,21 +10,13 @@ h1 {
     margin-bottom: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-<<<<<<< HEAD
-    font-size: 50px;
-=======
     font-size: 70px;
->>>>>>> ad096ee (Primer commit)
 
 }
 
 h2 {
     color: #C9CE36;
-<<<<<<< HEAD
-    font-size: 40px;
-=======
     font-size: 50px;
->>>>>>> ad096ee (Primer commit)
     margin-bottom: 50px;
 }
 
@@ -34,10 +26,6 @@ p {
     line-height: 1.5;
 }
 
-<<<<<<< HEAD
-header {
-    background-color: #36C8CE;
-=======
 .btn-personalizado {
   background-color: #6f42c1 !important;/* tu color */
   color: white;              /* color del texto */
@@ -50,7 +38,6 @@ header {
 
 header {
     background-color: #000808;
->>>>>>> ad096ee (Primer commit)
     padding: 10px;
     margin-top: 0;
     position: fixed;
@@ -62,11 +49,8 @@ header {
     margin-bottom: 0;
 }
 
-<<<<<<< HEAD
-=======
 .logo {}
 
->>>>>>> ad096ee (Primer commit)
 ul {
     display: flex;
     gap: 20px;
@@ -80,29 +64,17 @@ ul {
 
 li a {
     text-decoration: none;
-<<<<<<< HEAD
-    color: black;
-=======
     color: white;
->>>>>>> ad096ee (Primer commit)
     font-weight: bold;
 }
 
 li a:hover {
-<<<<<<< HEAD
-    color: #CE36C9;
-=======
     color: #C9CE36;
->>>>>>> ad096ee (Primer commit)
     text-decoration: underline;
 }
 
 footer {
-<<<<<<< HEAD
-    background-color: #CE36C9;
-=======
     background-color: black;
->>>>>>> ad096ee (Primer commit)
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -121,12 +93,8 @@ main {
     text-align: center;
     margin: 0 50px;
     padding-top: 80px;
-<<<<<<< HEAD
-    padding-bottom: 50px;
-=======
     padding-bottom: 80px;
     
->>>>>>> ad096ee (Primer commit)
 }
 
 main img {
@@ -168,17 +136,6 @@ section div {
     /* Incluye el padding en el ancho */
 }
 
-<<<<<<< HEAD
-@media (max-width: 768px) {
-    .container {
-        padding: 0 16px;
-        /* Menos margen en pantallas pequeñas */
-    }
-}
-
-.separador {
-    border-top: 8px solid #36C8CE;
-=======
 .div-difuminado {
   background-color: rgba(0, 0, 0, 0.4); /* semi-transparente */
   color: white;
@@ -195,7 +152,6 @@ section div {
 
 .separador {
     border-top: 8px solid #6f42c1;
->>>>>>> ad096ee (Primer commit)
     margin: 20px 0;
     margin-top: 200px;
 }
@@ -235,14 +191,6 @@ section div {
 }
 
 
-<<<<<<< HEAD
-.halloween {
-    p {
-        color: white;
-    }
-}
-=======
->>>>>>> ad096ee (Primer commit)
 
 .box-flotante {
     background: rgba(255, 255, 255, 0.1);
@@ -268,11 +216,6 @@ section div {
 
 .animacion-halloween {
     display: block;
-<<<<<<< HEAD
-    margin: 20px auto; 
-}
-
-=======
     margin: 20px auto;
 }
 
@@ -296,4 +239,3 @@ section div {
         /* Menos margen en pantallas pequeñas */
     }
 }
->>>>>>> ad096ee (Primer commit)
