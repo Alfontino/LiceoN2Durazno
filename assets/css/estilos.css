@@ -191,6 +191,22 @@ section div {
 }
 
 
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
 
 .box-flotante {
     background: rgba(255, 255, 255, 0.1);
@@ -239,3 +255,83 @@ section div {
         /* Menos margen en pantallas pequeñas */
     }
 }
+
+/* 🔹 Contenedor principal */
+.galeria-cuentos {
+  text-align: center;
+  padding: 2rem;
+}
+
+.galeria-cuentos h2 {
+  margin-bottom: 2rem;
+}
+
+/* 🔹 Grilla flexible */
+.contenedor-cuentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* 🔹 Cada cuadro */
+.cuadro {
+  position: relative;
+  width: 220px;
+  aspect-ratio: 1 / 1; /* cuadrado perfecto */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cuadro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔹 Imagen */
+.cuadro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔹 Overlay (oculto por defecto) */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cuadro:hover .overlay {
+  opacity: 1;
+}
+
+/* 🔹 Texto y botón */
+.overlay h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.overlay a {
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.overlay a:hover {
+  background-color: #005fa3;
+}
+
+
