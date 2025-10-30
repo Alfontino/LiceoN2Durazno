@@ -150,6 +150,11 @@ section div {
   padding: 20px;
 }
 
+.seccion-2 {
+  background: linear-gradient(135deg, #2c2c2b, #d8d6d2);
+  border-radius: 20px;
+}
+
 .separador {
     border-top: 8px solid #6f42c1;
     margin: 20px 0;
@@ -259,26 +264,31 @@ section div {
 /* 🔹 Contenedor principal */
 .galeria-cuentos {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
+  overflow-x: hidden; /* evita desbordes horizontales */
 }
 
 .galeria-cuentos h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* 🔹 Grilla flexible */
+/*  Grid flexible y centrado */
 .contenedor-cuentos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
   justify-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* 🔹 Cada cuadro */
+/*  Cuadros cuadrados y responsivos */
 .cuadro {
   position: relative;
-  width: 220px;
-  aspect-ratio: 1 / 1; /* cuadrado perfecto */
+  width: 100%;
+  aspect-ratio: 1 / 1; /* cuadrado */
+  max-width: 220px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -290,14 +300,15 @@ section div {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* 🔹 Imagen */
+/*  Imagen ajustada */
 .cuadro img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-/* 🔹 Overlay (oculto por defecto) */
+/*  Overlay */
 .overlay {
   position: absolute;
   inset: 0;
@@ -314,11 +325,11 @@ section div {
   opacity: 1;
 }
 
-/* 🔹 Texto y botón */
+/*  Texto y botón */
 .overlay h3 {
   color: #fff;
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .overlay a {
@@ -327,11 +338,26 @@ section div {
   text-decoration: none;
   padding: 6px 14px;
   border-radius: 6px;
-  transition: background-color 0.2s ease;
+  font-size: 0.9rem;
 }
 
 .overlay a:hover {
   background-color: #005fa3;
 }
 
+/*  Ajustes extra para pantallas pequeñas */
+@media (max-width: 500px) {
+  .contenedor-cuentos {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
 
+  .overlay h3 {
+    font-size: 0.9rem;
+  }
+
+  .overlay a {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
